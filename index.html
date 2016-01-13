@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="Nelson ALejandro Soto Durán" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" href="img/favicon/favicon.png" type="image/png"/>
+		<link rel="stylesheet" href="css/styleModal.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Inicio de Sesión</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="">Inicio</a></li>
+					<li><a href="">Contacto</a></li>
+					<li><a href="#sesion">Iniciar sesión</a></li>
+				</ul>
+			</nav>
+		</header>
+
+
+
+		<div id="sesion" class="abrirModal">
+			<div>
+				<a href="#cerrar" title="Cerrar" class="cerrar">X</a>
+				<h2>Iniciar Sesión</h2>
+				<hr>
+				<form action="php/validarUser.php" method="POST">
+					<input type="text" name="user" placeholder="Usuario"> <br> <br>
+					<input type="password" name="pass" placeholder="******">
+					<br><br>
+					<input type="submit" value="Iniciar Sesión">
+					<a href="#cerrar"><input type="button" value="Cancelar"></a>
+					<br><br>
+					<hr>
+					<a href="">Registrarse</a>
+				</form>
+			</div>
+		</div>
+		
+	</body>
+</html>
